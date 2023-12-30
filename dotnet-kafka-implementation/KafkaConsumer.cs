@@ -6,12 +6,12 @@ namespace dotnet_kafka_implementation
     {
         private IConsumer<string, string> _consumer;
         private ConsumerConfig consumerConfig;
-        public KafkaConsumer()
+        public KafkaConsumer(IConfiguration configuration)
         {
             consumerConfig = new ConsumerConfig
             {
-                BootstrapServers = "localhost:9092", //Replace the Kafka BootstrapServer
-                GroupId = "OrderRequestConsumerGroup",
+                BootstrapServers = configuration["Kafka:BootstrapServers"],
+                GroupId = configuration["Kafka:GroupId"],
                 AutoOffsetReset = AutoOffsetReset.Earliest,
             };
         }

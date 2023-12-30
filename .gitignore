@@ -1,0 +1,11 @@
+# These are some examples of commonly ignored file patterns.
+# You should customize this list as applicable to your project.
+# Learn more about .gitignore:
+#     https://www.atlassian.com/git/tutorials/saving-changes/gitignore
+
+
+/.vs
+/.vs/dotnet-kafka-implementation
+/dotnet-kafka-implementation/bin
+/dotnet-kafka-implementation/obj
+/.vs/dotnet-kafka-implementation/FileContentIndex/41f28563-0320-40b5-89c3-f6c5b716fdf9.vsidx

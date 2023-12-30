@@ -6,11 +6,11 @@ namespace dotnet_kafka_implementation
     {
         private readonly IProducer<string, string> _producer;
 
-        public KafkaProducer()
+        public KafkaProducer(IConfiguration configuration)
         {
             var producerConfig = new ProducerConfig
             {
-                BootstrapServers = "localhost:9092" //Change the Kafka Bootstap Server URL
+                BootstrapServers = configuration["Kafka:BootstrapServers"]
             };
 
             //Build the Producer
