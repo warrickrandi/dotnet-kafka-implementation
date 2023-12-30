@@ -26,6 +26,6 @@ This repository showcases a robust implementation of Apache Kafka in a .NET Core
 4.  **Send Order Request**
    When send the order Request, Order Request will produce to Kafka Topic
 
-##Background Service##
+## Background Service 
 
 The 'BackgroundWorkerService.cs' is a background service that consumes orders from the Kafka topic.
